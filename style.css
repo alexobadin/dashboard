@@ -15,9 +15,9 @@ body {
   grid-template-columns: 1fr 4fr;
 }
 
-/* ***************************
+/* *****************************************
 ASIDE
-****************************** */
+******************************************** */
 
 aside {
   background-color: var(--aside-bg-color);
@@ -28,8 +28,17 @@ aside {
   gap: 3rem;
 }
 
-svg {
+aside svg {
   width: 24px;
+}
+
+aside a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+aside a:hover {
+  color: #86d0f8;
 }
 
 .logo a {
@@ -44,6 +53,7 @@ svg {
 .logo-svg {
   justify-self: center;
 }
+
 .tabs,
 .logo,
 .add-tabs {
@@ -56,10 +66,128 @@ svg {
   font-weight: 500;
 }
 
-a {
-  color: #ffffff;
+.container {
+  display: grid;
+  grid-template-rows: 1fr 6fr;
+}
+
+/* *****************************************
+HEADER
+******************************************** */
+
+header {
+  background-color: #ffff;
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 2fr;
+  align-items: center;
+  justify-items: center;
+}
+header a {
+  color: black;
   text-decoration: none;
 }
+
+header a:hover {
+  text-decoration: underline;
+}
+header .search {
+  width: 100%;
+
+  grid-column: span 3;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+input {
+  width: 100%;
+  max-width: 500px;
+  background-color: var(--main-bg-color);
+  border: none;
+  border-radius: 100px;
+  height: 1.4rem;
+}
+
+header .input {
+  width: 100%;
+}
+
+header .profile-end {
+  grid-column: 5/7;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.profile-text {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+header .profile-end img {
+  margin: 0 1rem 0 2rem;
+}
+
+header img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+header .main-img img {
+  width: 60px;
+  height: 60px;
+}
+
+header .main-profile {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+
+  grid-column: -7/-4;
+}
+
+header .text {
+  font-size: 0.8rem;
+}
+.name-main {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+header .buttons {
+  grid-column: -4/-1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  width: 100%;
+}
+
+header button {
+  background-color: var(--aside-bg-color);
+  color: #ffffff;
+  border: none;
+  width: 5rem;
+  padding: 0.4rem 1rem;
+  border-radius: 100px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  transition: 0.1s;
+}
+header button:hover {
+  background-color: #74ceff;
+  cursor: pointer;
+}
+
+/* *****************************************
+MAIN
+******************************************** */
+
 main {
   background-color: var(--main-bg-color);
 }
