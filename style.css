@@ -533,3 +533,8 @@ main {
     font-size: 2rem;
   }
 }
+@media screen and (max-width: 400px) {
+  .main-container .trending {
+    padding-top: 0.5rem;
+  }
+}
